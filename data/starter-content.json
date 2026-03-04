@@ -1,0 +1,330 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section and call-to-action for The Deep Dive Podcast",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Section Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA Text",
+          "type": "string"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA Text",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "episode",
+      "label": "Episode",
+      "description": "Podcast episodes with audio, guest info, and show notes",
+      "body": true,
+      "fields": [
+        {
+          "id": "episode_number",
+          "label": "Episode Number",
+          "type": "integer",
+          "description": "The episode number"
+        },
+        {
+          "id": "season",
+          "label": "Season",
+          "type": "integer",
+          "description": "Season number"
+        },
+        {
+          "id": "duration",
+          "label": "Duration",
+          "type": "string",
+          "description": "Episode duration (e.g., '48 min')"
+        },
+        {
+          "id": "audio_url",
+          "label": "Audio URL",
+          "type": "string",
+          "description": "URL to the episode audio file"
+        },
+        {
+          "id": "guest_name",
+          "label": "Guest Name",
+          "type": "string",
+          "description": "Name of the episode guest"
+        },
+        {
+          "id": "publish_date",
+          "label": "Publish Date",
+          "type": "datetime",
+          "description": "Episode publish date"
+        },
+        {
+          "id": "image",
+          "label": "Episode Image",
+          "type": "image"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Show this episode in the featured section"
+        }
+      ]
+    },
+    {
+      "bundle": "host",
+      "label": "Host",
+      "description": "Podcast host profiles",
+      "body": true,
+      "fields": [
+        {
+          "id": "role",
+          "label": "Role",
+          "type": "string",
+          "description": "Host role (e.g., Lead Host & Producer)"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "string",
+          "description": "Contact email address"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "image",
+          "description": "Host profile photo"
+        },
+        {
+          "id": "social_url",
+          "label": "Social URL",
+          "type": "string",
+          "description": "Primary social media profile URL"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, etc.",
+      "body": true,
+      "fields": []
+    }
+  ],
+  "content": [
+    {
+      "type": "node.homepage",
+      "id": "homepage-1",
+      "path": "/homepage",
+      "values": {
+        "title": "The Deep Dive Podcast",
+        "hero_title": "The Deep Dive Podcast",
+        "hero_subtitle": "Conversations That Matter",
+        "hero_description": "<p>Weekly conversations with the world's most interesting thinkers, builders, and creators. We go beyond the surface to explore the ideas shaping our future.</p>",
+        "cta_title": "Never Miss an Episode",
+        "cta_description": "<p>Subscribe to The Deep Dive and get new episodes delivered every week. Join thousands of curious minds who start their week with us.</p>",
+        "cta_primary": "Listen Now",
+        "cta_secondary": "Meet the Hosts"
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-1",
+      "path": "/episodes/future-of-remote-work-culture",
+      "values": {
+        "title": "The Future of Remote Work Culture",
+        "body": "<p>In this episode, we sit down with workplace culture experts to explore how remote work is reshaping everything from team dynamics to urban planning.</p><h2>Key Topics</h2><ul><li>The hybrid work model debate</li><li>Building trust in remote teams</li><li>Tools and practices for asynchronous collaboration</li><li>The impact on commercial real estate</li></ul><p>Our guest shares insights from working with Fortune 500 companies on their remote work transitions, revealing surprising data about what actually drives team performance.</p>",
+        "episode_number": 42,
+        "season": 3,
+        "duration": "48 min",
+        "audio_url": "https://example.com/episodes/ep42.mp3",
+        "guest_name": "Dr. Sarah Lin",
+        "publish_date": "2026-02-28",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=800&q=80",
+          "alt": "Person working remotely from a modern home office"
+        },
+        "featured": true
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-2",
+      "path": "/episodes/ai-ethics-drawing-the-line",
+      "values": {
+        "title": "AI Ethics: Drawing the Line",
+        "body": "<p>As AI becomes more integrated into daily life, the ethical questions grow more urgent. We explore the frameworks being developed to guide responsible AI development.</p><h2>Discussion Points</h2><ul><li>Bias in machine learning models</li><li>Transparency and explainability</li><li>The EU AI Act and global regulation</li><li>AI in healthcare decision-making</li></ul>",
+        "episode_number": 41,
+        "season": 3,
+        "duration": "55 min",
+        "audio_url": "https://example.com/episodes/ep41.mp3",
+        "guest_name": "Prof. Marcus Webb",
+        "publish_date": "2026-02-21",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+          "alt": "Abstract AI visualization"
+        },
+        "featured": false
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-3",
+      "path": "/episodes/building-a-second-brain",
+      "values": {
+        "title": "Building a Second Brain",
+        "body": "<p>Personal knowledge management has become essential in the information age. We explore the methods and tools that help professionals capture, organize, and retrieve the knowledge they need to excel.</p><h2>What You Will Learn</h2><ul><li>The PARA method for organizing information</li><li>Progressive summarization techniques</li><li>Choosing the right tools for your workflow</li></ul>",
+        "episode_number": 40,
+        "season": 3,
+        "duration": "42 min",
+        "audio_url": "https://example.com/episodes/ep40.mp3",
+        "guest_name": "Tiago Forte",
+        "publish_date": "2026-02-14",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&q=80",
+          "alt": "Organized notebook with colorful tabs"
+        },
+        "featured": false
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-4",
+      "path": "/episodes/science-of-habit-formation",
+      "values": {
+        "title": "The Science of Habit Formation",
+        "body": "<p>Why do some habits stick while others fade away? We dive into the neuroscience behind habit formation and break down the evidence-based strategies that make behavior change sustainable.</p><h2>Topics Covered</h2><ul><li>The habit loop: cue, routine, reward</li><li>Environment design for better habits</li><li>Identity-based habit change</li></ul>",
+        "episode_number": 39,
+        "season": 3,
+        "duration": "51 min",
+        "audio_url": "https://example.com/episodes/ep39.mp3",
+        "guest_name": "Dr. Elena Vasquez",
+        "publish_date": "2026-02-07",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80",
+          "alt": "Person writing in a journal"
+        },
+        "featured": false
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-5",
+      "path": "/episodes/startup-lessons-from-the-trenches",
+      "values": {
+        "title": "Startup Lessons from the Trenches",
+        "body": "<p>Three founders share their most valuable lessons from building and scaling startups. From product-market fit to fundraising to managing a growing team.</p><h2>Key Takeaways</h2><ul><li>Finding product-market fit before scaling</li><li>When to bootstrap vs. raise funding</li><li>Building a founding team that works</li></ul>",
+        "episode_number": 38,
+        "season": 3,
+        "duration": "63 min",
+        "audio_url": "https://example.com/episodes/ep38.mp3",
+        "guest_name": "Panel Discussion",
+        "publish_date": "2026-01-31",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80",
+          "alt": "Startup team collaborating"
+        },
+        "featured": false
+      }
+    },
+    {
+      "type": "node.episode",
+      "id": "episode-6",
+      "path": "/episodes/designing-for-accessibility",
+      "values": {
+        "title": "Designing for Accessibility",
+        "body": "<p>Accessibility in digital design is not just a legal requirement but an opportunity to build better products for everyone. We explore the principles, tools, and mindset shifts needed to create truly inclusive digital experiences.</p><h2>What We Cover</h2><ul><li>WCAG guidelines in practice</li><li>Designing for screen readers</li><li>Color contrast and typography</li></ul>",
+        "episode_number": 37,
+        "season": 3,
+        "duration": "45 min",
+        "audio_url": "https://example.com/episodes/ep37.mp3",
+        "guest_name": "Jordan Kessler",
+        "publish_date": "2026-01-24",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
+          "alt": "Designer working on wireframes"
+        },
+        "featured": false
+      }
+    },
+    {
+      "type": "node.host",
+      "id": "host-1",
+      "path": "/hosts/alex-rivera",
+      "values": {
+        "title": "Alex Rivera",
+        "body": "<p>Alex Rivera is a technology journalist and podcast host with over a decade of experience covering the intersection of tech, culture, and society.</p><p>Known for asking the questions listeners are thinking, Alex brings a conversational yet incisive interviewing style that draws out the best from every guest.</p>",
+        "role": "Lead Host & Producer",
+        "email": "alex@thedeepdivedpodcast.com",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+          "alt": "Alex Rivera headshot"
+        },
+        "social_url": "https://twitter.com/alexrivera"
+      }
+    },
+    {
+      "type": "node.host",
+      "id": "host-2",
+      "path": "/hosts/maya-patel",
+      "values": {
+        "title": "Maya Patel",
+        "body": "<p>Maya Patel is a researcher, writer, and co-host of The Deep Dive Podcast. With a PhD in cognitive science from MIT, Maya brings a unique analytical perspective to conversations about technology, human behavior, and the future of work.</p>",
+        "role": "Co-Host & Research Lead",
+        "email": "maya@thedeepdivedpodcast.com",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+          "alt": "Maya Patel headshot"
+        },
+        "social_url": "https://twitter.com/mayapatel"
+      }
+    },
+    {
+      "type": "node.page",
+      "id": "page-about",
+      "path": "/about",
+      "values": {
+        "title": "About The Deep Dive",
+        "body": "<p>The Deep Dive Podcast launched in 2024 with a simple mission: have the conversations that matter. Every week, we sit down with leading thinkers, builders, and creators to explore the ideas shaping our world.</p><h2>Our Philosophy</h2><p>We believe the best conversations happen when you go beyond the surface. Our episodes are longer, more in-depth, and more nuanced than typical podcast interviews.</p>"
+      }
+    },
+    {
+      "type": "node.page",
+      "id": "page-contact",
+      "path": "/contact",
+      "values": {
+        "title": "Contact Us",
+        "body": "<p>We love hearing from our listeners! Whether you have a guest suggestion, topic idea, or just want to say hello, reach out to us.</p><h2>Get in Touch</h2><p>Email us at <strong>hello@thedeepdivedpodcast.com</strong> for general inquiries, guest pitches, or sponsorship opportunities.</p>"
+      }
+    }
+  ]
+}

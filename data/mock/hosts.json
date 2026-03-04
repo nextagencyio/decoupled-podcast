@@ -1,0 +1,132 @@
+{
+  "data": {
+    "nodeHosts": {
+      "__typename": "NodeHostConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHost",
+          "id": "host-mira",
+          "title": "Mira Patel",
+          "path": "/hosts/mira-patel",
+          "body": {
+            "processed": "<p>Mira is the co-host and co-creator of The Signal. A former technology correspondent for The New York Times, she spent eight years covering Silicon Valley before launching the podcast in 2021. Her interviewing style is direct, deeply researched, and unafraid to challenge conventional wisdom.</p><p>Mira holds a degree in Computer Science from Stanford and a Master's in Journalism from Columbia, giving her a unique ability to translate complex technical concepts for a broad audience.</p><p>When she's not behind the microphone, Mira advises early-stage startups on communications strategy and speaks at technology conferences worldwide.</p>",
+            "summary": "Mira is the co-host and co-creator of The Signal. A former technology correspondent for The New York Times, she spent eight years covering Silicon Valley before launching the podcast in 2021. Her inte"
+          },
+          "hostRole": "Co-Host & Co-Creator",
+          "socialLinks": [
+            "twitter.com/mirapatel",
+            "linkedin.com/in/mirapatel"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Mira Patel - Co-Host",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeHost",
+          "id": "host-jordan",
+          "title": "Jordan Hayes",
+          "path": "/hosts/jordan-hayes",
+          "body": {
+            "processed": "<p>Jordan is the co-host and co-creator of The Signal. Before podcasting, he was a product manager at Google and then a partner at a venture capital firm, giving him firsthand experience on both the building and investing sides of technology.</p><p>Jordan brings the business and investment perspective to The Signal's conversations, complementing Mira's journalistic rigor with practical insight into how companies actually build, scale, and compete.</p><p>He is the author of <em>Building the Future</em> (2024), a book on how technology startups can create lasting impact, and serves on the advisory board of several AI companies.</p>",
+            "summary": "Jordan is the co-host and co-creator of The Signal. Before podcasting, he was a product manager at Google and then a partner at a venture capital firm, giving him firsthand experience on both the buil"
+          },
+          "hostRole": "Co-Host & Co-Creator",
+          "socialLinks": [
+            "twitter.com/jordanhayes",
+            "linkedin.com/in/jordanhayes"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Jordan Hayes - Co-Host",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeHost",
+          "id": "host-anna",
+          "title": "Anna Liu",
+          "path": "/hosts/anna-liu",
+          "body": {
+            "processed": "<p>Anna is The Signal's producer and occasional guest host, stepping in for special episodes and series. With a background in audio production at NPR and Gimlet Media, Anna is the creative force behind the show's distinctive sound design and editorial quality.</p><p>She oversees all production aspects of the podcast, from guest research and pre-interviews to audio engineering and distribution. Under her production leadership, The Signal has grown from 500 downloads per episode to over 50,000.</p>",
+            "summary": "Anna is The Signal's producer and occasional guest host, stepping in for special episodes and series. With a background in audio production at NPR and Gimlet Media, Anna is the creative force behind t"
+          },
+          "hostRole": "Executive Producer & Guest Host",
+          "socialLinks": [
+            "twitter.com/annaliu_audio",
+            "linkedin.com/in/annaliu"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Anna Liu - Producer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

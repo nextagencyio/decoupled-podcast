@@ -1,0 +1,225 @@
+{
+  "data": {
+    "nodeEpisodes": {
+      "__typename": "NodeEpisodeConnection",
+      "nodes": [
+        {
+          "__typename": "NodeEpisode",
+          "id": "episode-238",
+          "title": "The Future of Work After AI",
+          "path": "/episodes/238-future-of-work-ai",
+          "body": {
+            "processed": "<p>What happens to the labor market when AI can do 80% of knowledge work tasks? We sit down with economist Dr. Sarah Kessler to discuss the research, the reality, and the opportunities that emerge when technology transforms work at unprecedented scale.</p><h2>Topics Covered</h2><ul><li>How AI adoption is actually playing out in enterprises</li><li>Which jobs are being augmented vs. replaced</li><li>The emerging \"AI-native\" job categories</li><li>Why the transition may be faster and smoother than feared</li><li>Policy responses and universal basic income experiments</li></ul><h2>Key Takeaway</h2><p>Dr. Kessler argues that the real disruption isn't job elimination but job transformation. The workers who thrive will be those who learn to collaborate with AI tools, not compete against them.</p>",
+            "summary": "What happens to the labor market when AI can do 80% of knowledge work tasks? We sit down with economist Dr. Sarah Kessler to discuss the research, the reality, and the opportunities that emerge when t"
+          },
+          "episodeNumber": 238,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "interviews",
+              "name": "interviews"
+            }
+          ],
+          "guestName": "Dr. Sarah Kessler",
+          "guestTitle": "Professor of Economics, MIT Sloan",
+          "duration": "1h 12min",
+          "publishDate": {
+            "timestamp": 1772020800
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/238",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+            "alt": "AI and future of work concept illustration",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        },
+        {
+          "__typename": "NodeEpisode",
+          "id": "episode-237",
+          "title": "Climate Tech's Trillion Dollar Moment",
+          "path": "/episodes/237-climate-tech-trillion",
+          "body": {
+            "processed": "<p>Venture capitalist and climate tech investor Ravi Gupta breaks down why climate technology is entering its most exciting era. From fusion energy breakthroughs to carbon capture at scale, the sector is attracting unprecedented capital and talent.</p><h2>Discussion Points</h2><ul><li>Why 2026 is a turning point for climate tech investment</li><li>The fusion energy companies to watch</li><li>Direct air capture: costs, scaling, and the road ahead</li><li>How policy incentives are reshaping the investment landscape</li><li>The role of AI in accelerating climate solutions</li></ul><h2>Key Insight</h2><p>Gupta estimates that climate tech will become the largest venture category by 2028, surpassing even AI. The two sectors are deeply interlinked, with AI enabling faster materials discovery, grid optimization, and carbon accounting.</p>",
+            "summary": "Venture capitalist and climate tech investor Ravi Gupta breaks down why climate technology is entering its most exciting era. From fusion energy breakthroughs to carbon capture at scale, the sector is"
+          },
+          "episodeNumber": 237,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "interviews",
+              "name": "interviews"
+            }
+          ],
+          "guestName": "Ravi Gupta",
+          "guestTitle": "Managing Partner, Meridian Climate Ventures",
+          "duration": "58min",
+          "publishDate": {
+            "timestamp": 1771416000
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/237",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+            "alt": "Wind turbines representing climate technology",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        },
+        {
+          "__typename": "NodeEpisode",
+          "id": "episode-236",
+          "title": "Deep Dive: The Open Source AI Battle",
+          "path": "/episodes/236-deep-dive-open-source-ai",
+          "body": {
+            "processed": "<p>In this deep dive episode, Mira and Jordan unpack the escalating tension between open source and proprietary AI models. Who's winning, what's at stake, and why the outcome matters for everyone -- not just developers.</p><h2>Analysis</h2><ul><li>The philosophical divide between open and closed AI development</li><li>How open source models are closing the performance gap</li><li>Security and safety implications of open weights models</li><li>The business models sustaining open source AI</li><li>Government positions and regulatory implications</li></ul>",
+            "summary": "In this deep dive episode, Mira and Jordan unpack the escalating tension between open source and proprietary AI models. Who's winning, what's at stake, and why the outcome matters for everyone -- not "
+          },
+          "episodeNumber": 236,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "deep-dives",
+              "name": "deep-dives"
+            }
+          ],
+          "guestName": "",
+          "guestTitle": "",
+          "duration": "45min",
+          "publishDate": {
+            "timestamp": 1770811200
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/236",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+            "alt": "Open source code on a screen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        },
+        {
+          "__typename": "NodeEpisode",
+          "id": "episode-bonus-12",
+          "title": "Bonus: February AMA with Mira & Jordan",
+          "path": "/episodes/bonus-12-ama-february",
+          "body": {
+            "processed": "<p>In this subscriber-exclusive episode, Mira and Jordan answer listener questions on everything from their favorite tech predictions to behind-the-scenes stories from recent interviews.</p><h2>Questions Answered</h2><ul><li>What's your most contrarian tech take?</li><li>Which episode guest changed your mind about something?</li><li>How do you prepare for interviews?</li><li>What tech are you most excited about in 2026?</li><li>Book recommendations for understanding AI</li></ul>",
+            "summary": "In this subscriber-exclusive episode, Mira and Jordan answer listener questions on everything from their favorite tech predictions to behind-the-scenes stories from recent interviews.Questions Answere"
+          },
+          "episodeNumber": 12,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "subscriber-exclusive",
+              "name": "subscriber-exclusive"
+            },
+            {
+              "id": "bonus",
+              "name": "bonus"
+            }
+          ],
+          "guestName": "",
+          "guestTitle": "",
+          "duration": "35min",
+          "publishDate": {
+            "timestamp": 1772280000
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/bonus-12",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+            "alt": "Podcast microphone in studio setting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": true,
+          "transcriptAvailable": true
+        }
+      ]
+    }
+  }
+}

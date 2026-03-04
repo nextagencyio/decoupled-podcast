@@ -1,0 +1,68 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to The Signal",
+          "path": "/homepage",
+          "heroTitle": "The Signal Podcast",
+          "heroSubtitle": "Conversations at the Frontier of Technology and Society",
+          "heroDescription": {
+            "processed": "<p>Every week, hosts Mira Patel and Jordan Hayes sit down with the thinkers, builders, and leaders shaping our technological future. Deep conversations, no jargon, real insight.</p>",
+            "summary": "Every week, hosts Mira Patel and Jordan Hayes sit down with the thinkers, builders, and leaders shaping our technological future. Deep conversations, no jargon, real insight."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-episodes",
+              "title": "",
+              "number": "240+",
+              "label": "Episodes Released"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-downloads",
+              "title": "",
+              "number": "5M+",
+              "label": "Total Downloads"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-subscribers",
+              "title": "",
+              "number": "45K+",
+              "label": "Subscribers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-countries",
+              "title": "",
+              "number": "120+",
+              "label": "Countries Reached"
+            }
+          ],
+          "featuredItemsTitle": "Latest Episodes",
+          "ctaTitle": "Go Premium",
+          "ctaDescription": {
+            "processed": "<p>Get access to exclusive bonus episodes, ad-free listening, full transcripts, and early access to new episodes every week.</p>",
+            "summary": "Get access to exclusive bonus episodes, ad-free listening, full transcripts, and early access to new episodes every week."
+          },
+          "ctaPrimary": "Subscribe Now",
+          "ctaSecondary": "Listen Free",
+          "subscriptionPrice": "$8/month or $72/year",
+          "subscriptionFeatures": [
+            "Ad-free listening on all episodes",
+            "Exclusive bonus episodes every month",
+            "Full transcripts of every episode",
+            "Early access - new episodes 48 hours before public release",
+            "Members-only Discord community",
+            "Annual subscriber meetup invitations"
+          ]
+        }
+      ]
+    }
+  }
+}

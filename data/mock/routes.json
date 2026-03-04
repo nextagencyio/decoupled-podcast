@@ -1,0 +1,490 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to The Signal",
+          "path": "/homepage",
+          "heroTitle": "The Signal Podcast",
+          "heroSubtitle": "Conversations at the Frontier of Technology and Society",
+          "heroDescription": {
+            "processed": "<p>Every week, hosts Mira Patel and Jordan Hayes sit down with the thinkers, builders, and leaders shaping our technological future. Deep conversations, no jargon, real insight.</p>",
+            "summary": "Every week, hosts Mira Patel and Jordan Hayes sit down with the thinkers, builders, and leaders shaping our technological future. Deep conversations, no jargon, real insight."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-episodes",
+              "title": "",
+              "number": "240+",
+              "label": "Episodes Released"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-downloads",
+              "title": "",
+              "number": "5M+",
+              "label": "Total Downloads"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-subscribers",
+              "title": "",
+              "number": "45K+",
+              "label": "Subscribers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-countries",
+              "title": "",
+              "number": "120+",
+              "label": "Countries Reached"
+            }
+          ],
+          "featuredItemsTitle": "Latest Episodes",
+          "ctaTitle": "Go Premium",
+          "ctaDescription": {
+            "processed": "<p>Get access to exclusive bonus episodes, ad-free listening, full transcripts, and early access to new episodes every week.</p>",
+            "summary": "Get access to exclusive bonus episodes, ad-free listening, full transcripts, and early access to new episodes every week."
+          },
+          "ctaPrimary": "Subscribe Now",
+          "ctaSecondary": "Listen Free",
+          "subscriptionPrice": "$8/month or $72/year",
+          "subscriptionFeatures": [
+            "Ad-free listening on all episodes",
+            "Exclusive bonus episodes every month",
+            "Full transcripts of every episode",
+            "Early access - new episodes 48 hours before public release",
+            "Members-only Discord community",
+            "Annual subscriber meetup invitations"
+          ]
+        }
+      }
+    }
+  },
+  "/episodes/238-future-of-work-ai": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeEpisode",
+          "id": "episode-238",
+          "title": "The Future of Work After AI",
+          "path": "/episodes/238-future-of-work-ai",
+          "body": {
+            "processed": "<p>What happens to the labor market when AI can do 80% of knowledge work tasks? We sit down with economist Dr. Sarah Kessler to discuss the research, the reality, and the opportunities that emerge when technology transforms work at unprecedented scale.</p><h2>Topics Covered</h2><ul><li>How AI adoption is actually playing out in enterprises</li><li>Which jobs are being augmented vs. replaced</li><li>The emerging \"AI-native\" job categories</li><li>Why the transition may be faster and smoother than feared</li><li>Policy responses and universal basic income experiments</li></ul><h2>Key Takeaway</h2><p>Dr. Kessler argues that the real disruption isn't job elimination but job transformation. The workers who thrive will be those who learn to collaborate with AI tools, not compete against them.</p>",
+            "summary": "What happens to the labor market when AI can do 80% of knowledge work tasks? We sit down with economist Dr. Sarah Kessler to discuss the research, the reality, and the opportunities that emerge when t"
+          },
+          "episodeNumber": 238,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "interviews",
+              "name": "interviews"
+            }
+          ],
+          "guestName": "Dr. Sarah Kessler",
+          "guestTitle": "Professor of Economics, MIT Sloan",
+          "duration": "1h 12min",
+          "publishDate": {
+            "timestamp": 1772020800
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/238",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+            "alt": "AI and future of work concept illustration",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        }
+      }
+    }
+  },
+  "/episodes/237-climate-tech-trillion": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeEpisode",
+          "id": "episode-237",
+          "title": "Climate Tech's Trillion Dollar Moment",
+          "path": "/episodes/237-climate-tech-trillion",
+          "body": {
+            "processed": "<p>Venture capitalist and climate tech investor Ravi Gupta breaks down why climate technology is entering its most exciting era. From fusion energy breakthroughs to carbon capture at scale, the sector is attracting unprecedented capital and talent.</p><h2>Discussion Points</h2><ul><li>Why 2026 is a turning point for climate tech investment</li><li>The fusion energy companies to watch</li><li>Direct air capture: costs, scaling, and the road ahead</li><li>How policy incentives are reshaping the investment landscape</li><li>The role of AI in accelerating climate solutions</li></ul><h2>Key Insight</h2><p>Gupta estimates that climate tech will become the largest venture category by 2028, surpassing even AI. The two sectors are deeply interlinked, with AI enabling faster materials discovery, grid optimization, and carbon accounting.</p>",
+            "summary": "Venture capitalist and climate tech investor Ravi Gupta breaks down why climate technology is entering its most exciting era. From fusion energy breakthroughs to carbon capture at scale, the sector is"
+          },
+          "episodeNumber": 237,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "interviews",
+              "name": "interviews"
+            }
+          ],
+          "guestName": "Ravi Gupta",
+          "guestTitle": "Managing Partner, Meridian Climate Ventures",
+          "duration": "58min",
+          "publishDate": {
+            "timestamp": 1771416000
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/237",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+            "alt": "Wind turbines representing climate technology",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        }
+      }
+    }
+  },
+  "/episodes/236-deep-dive-open-source-ai": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeEpisode",
+          "id": "episode-236",
+          "title": "Deep Dive: The Open Source AI Battle",
+          "path": "/episodes/236-deep-dive-open-source-ai",
+          "body": {
+            "processed": "<p>In this deep dive episode, Mira and Jordan unpack the escalating tension between open source and proprietary AI models. Who's winning, what's at stake, and why the outcome matters for everyone -- not just developers.</p><h2>Analysis</h2><ul><li>The philosophical divide between open and closed AI development</li><li>How open source models are closing the performance gap</li><li>Security and safety implications of open weights models</li><li>The business models sustaining open source AI</li><li>Government positions and regulatory implications</li></ul>",
+            "summary": "In this deep dive episode, Mira and Jordan unpack the escalating tension between open source and proprietary AI models. Who's winning, what's at stake, and why the outcome matters for everyone -- not "
+          },
+          "episodeNumber": 236,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "deep-dives",
+              "name": "deep-dives"
+            }
+          ],
+          "guestName": "",
+          "guestTitle": "",
+          "duration": "45min",
+          "publishDate": {
+            "timestamp": 1770811200
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/236",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+            "alt": "Open source code on a screen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": false,
+          "transcriptAvailable": true
+        }
+      }
+    }
+  },
+  "/episodes/bonus-12-ama-february": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeEpisode",
+          "id": "episode-bonus-12",
+          "title": "Bonus: February AMA with Mira & Jordan",
+          "path": "/episodes/bonus-12-ama-february",
+          "body": {
+            "processed": "<p>In this subscriber-exclusive episode, Mira and Jordan answer listener questions on everything from their favorite tech predictions to behind-the-scenes stories from recent interviews.</p><h2>Questions Answered</h2><ul><li>What's your most contrarian tech take?</li><li>Which episode guest changed your mind about something?</li><li>How do you prepare for interviews?</li><li>What tech are you most excited about in 2026?</li><li>Book recommendations for understanding AI</li></ul>",
+            "summary": "In this subscriber-exclusive episode, Mira and Jordan answer listener questions on everything from their favorite tech predictions to behind-the-scenes stories from recent interviews.Questions Answere"
+          },
+          "episodeNumber": 12,
+          "seasonNumber": 5,
+          "episodeCategory": [
+            {
+              "id": "subscriber-exclusive",
+              "name": "subscriber-exclusive"
+            },
+            {
+              "id": "bonus",
+              "name": "bonus"
+            }
+          ],
+          "guestName": "",
+          "guestTitle": "",
+          "duration": "35min",
+          "publishDate": {
+            "timestamp": 1772280000
+          },
+          "audioUrl": "https://audio.thesignalpodcast.com/episodes/bonus-12",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+            "alt": "Podcast microphone in studio setting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "isPremium": true,
+          "transcriptAvailable": true
+        }
+      }
+    }
+  },
+  "/hosts/mira-patel": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHost",
+          "id": "host-mira",
+          "title": "Mira Patel",
+          "path": "/hosts/mira-patel",
+          "body": {
+            "processed": "<p>Mira is the co-host and co-creator of The Signal. A former technology correspondent for The New York Times, she spent eight years covering Silicon Valley before launching the podcast in 2021. Her interviewing style is direct, deeply researched, and unafraid to challenge conventional wisdom.</p><p>Mira holds a degree in Computer Science from Stanford and a Master's in Journalism from Columbia, giving her a unique ability to translate complex technical concepts for a broad audience.</p><p>When she's not behind the microphone, Mira advises early-stage startups on communications strategy and speaks at technology conferences worldwide.</p>",
+            "summary": "Mira is the co-host and co-creator of The Signal. A former technology correspondent for The New York Times, she spent eight years covering Silicon Valley before launching the podcast in 2021. Her inte"
+          },
+          "hostRole": "Co-Host & Co-Creator",
+          "socialLinks": [
+            "twitter.com/mirapatel",
+            "linkedin.com/in/mirapatel"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Mira Patel - Co-Host",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/hosts/jordan-hayes": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHost",
+          "id": "host-jordan",
+          "title": "Jordan Hayes",
+          "path": "/hosts/jordan-hayes",
+          "body": {
+            "processed": "<p>Jordan is the co-host and co-creator of The Signal. Before podcasting, he was a product manager at Google and then a partner at a venture capital firm, giving him firsthand experience on both the building and investing sides of technology.</p><p>Jordan brings the business and investment perspective to The Signal's conversations, complementing Mira's journalistic rigor with practical insight into how companies actually build, scale, and compete.</p><p>He is the author of <em>Building the Future</em> (2024), a book on how technology startups can create lasting impact, and serves on the advisory board of several AI companies.</p>",
+            "summary": "Jordan is the co-host and co-creator of The Signal. Before podcasting, he was a product manager at Google and then a partner at a venture capital firm, giving him firsthand experience on both the buil"
+          },
+          "hostRole": "Co-Host & Co-Creator",
+          "socialLinks": [
+            "twitter.com/jordanhayes",
+            "linkedin.com/in/jordanhayes"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Jordan Hayes - Co-Host",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/hosts/anna-liu": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHost",
+          "id": "host-anna",
+          "title": "Anna Liu",
+          "path": "/hosts/anna-liu",
+          "body": {
+            "processed": "<p>Anna is The Signal's producer and occasional guest host, stepping in for special episodes and series. With a background in audio production at NPR and Gimlet Media, Anna is the creative force behind the show's distinctive sound design and editorial quality.</p><p>She oversees all production aspects of the podcast, from guest research and pre-interviews to audio engineering and distribution. Under her production leadership, The Signal has grown from 500 downloads per episode to over 50,000.</p>",
+            "summary": "Anna is The Signal's producer and occasional guest host, stepping in for special episodes and series. With a background in audio production at NPR and Gimlet Media, Anna is the creative force behind t"
+          },
+          "hostRole": "Executive Producer & Guest Host",
+          "socialLinks": [
+            "twitter.com/annaliu_audio",
+            "linkedin.com/in/annaliu"
+          ],
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Anna Liu - Producer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-about",
+          "title": "About The Signal",
+          "path": "/about",
+          "body": {
+            "processed": "<p>The Signal is a weekly podcast exploring the intersection of technology, business, and society. Since launching in 2021, we've published over 240 episodes featuring conversations with leading technologists, entrepreneurs, policymakers, and thinkers.</p><h2>Our Approach</h2><p>We believe the best conversations happen when smart people have enough time to go deep. Our episodes typically run 45-75 minutes, giving guests the space to explore ideas thoroughly rather than reducing complex topics to soundbites.</p><h2>Where to Listen</h2><ul><li>Apple Podcasts</li><li>Spotify</li><li>Google Podcasts</li><li>YouTube</li><li>RSS Feed</li></ul><h2>Advertising & Sponsorship</h2><p>The Signal partners with a select number of sponsors whose products and values align with our audience. For sponsorship inquiries, email ads@thesignalpodcast.com.</p>",
+            "summary": "The Signal is a weekly podcast exploring the intersection of technology, business, and society. Since launching in 2021, we've published over 240 episodes featuring conversations with leading technolo"
+          }
+        }
+      }
+    }
+  },
+  "/subscribe": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "page-subscribe",
+          "title": "Subscribe to The Signal Premium",
+          "path": "/subscribe",
+          "body": {
+            "processed": "<h2>Why Go Premium?</h2><p>The Signal Premium gives you the full podcast experience with exclusive content, no ads, and a direct connection to our community.</p><h2>What You Get</h2><ul><li><strong>Ad-Free Listening</strong> - Every episode, past and future, completely ad-free</li><li><strong>Exclusive Episodes</strong> - Two bonus episodes per month, including AMAs and extended interviews</li><li><strong>Full Transcripts</strong> - Searchable transcripts of every episode</li><li><strong>Early Access</strong> - New episodes drop 48 hours early for subscribers</li><li><strong>Discord Community</strong> - Join our members-only Discord for discussions with hosts and guests</li></ul><h2>Pricing</h2><p>Monthly: $8/month<br/>Annual: $72/year (save $24)</p><p>All subscriptions include a 14-day free trial. Cancel anytime.</p>",
+            "summary": "Why Go Premium?The Signal Premium gives you the full podcast experience with exclusive content, no ads, and a direct connection to our community.What You GetAd-Free Listening - Every episode, past and"
+          }
+        }
+      }
+    }
+  }
+}
