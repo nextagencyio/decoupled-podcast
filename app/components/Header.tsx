@@ -35,7 +35,7 @@ export default function Header() {
   const activeTab = getActiveTab()
 
   return (
-    <header className="fixed left-0 right-0 z-50 bg-primary-950/95 backdrop-blur-md border-b border-white/10" style={{ top: `${bannerHeight}px` }}>
+    <header className="fixed left-0 right-0 z-50 bg-gray-950/95 backdrop-blur-md border-b border-purple-500/20" style={{ top: `${bannerHeight}px` }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="font-display text-lg font-bold tracking-tight text-white hover:text-purple-300 transition-colors duration-200">The Deep Dive</Link>

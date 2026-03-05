@@ -27,7 +27,7 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
     return (
       <Link
         href={episode.path || `/episodes/${episode.id}`}
-        className="group block bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all hover:shadow-xl hover:shadow-purple-500/10"
+        className="group block bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transition-all hover:shadow-xl hover:shadow-purple-500/10"
       >
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative aspect-video md:aspect-auto md:h-full min-h-[250px]">
@@ -45,11 +45,11 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
             )}
           </div>
           <div className="p-6 md:p-8 flex flex-col justify-center">
-            <div className="flex items-center gap-3 text-sm text-gray-500 mb-4">
+            <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
               {episode.season && episode.episodeNumber && (
                 <>
                   <span className="text-purple-400 font-medium">S{episode.season} E{episode.episodeNumber}</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400" />
+                  <span className="w-1 h-1 rounded-full bg-gray-600" />
                 </>
               )}
               <span className="flex items-center gap-1">
@@ -58,7 +58,7 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
               </span>
               {episode.duration && (
                 <>
-                  <span className="w-1 h-1 rounded-full bg-gray-400" />
+                  <span className="w-1 h-1 rounded-full bg-gray-600" />
                   <span className="flex items-center gap-1">
                     <Clock className="h-4 w-4" />
                     {episode.duration}
@@ -66,15 +66,15 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
                 </>
               )}
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-purple-700 transition-colors">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">
               {episode.title}
             </h2>
-            <p className="text-gray-600 line-clamp-3 mb-4">
+            <p className="text-gray-300 line-clamp-3 mb-4">
               {summary}
             </p>
             {episode.guestName && (
-              <p className="text-sm text-gray-500">
-                Guest: <span className="text-gray-700">{episode.guestName}</span>
+              <p className="text-sm text-gray-400">
+                Guest: <span className="text-gray-200">{episode.guestName}</span>
               </p>
             )}
           </div>
@@ -86,7 +86,7 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
   return (
     <Link
       href={episode.path || `/episodes/${episode.id}`}
-      className="group block bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all hover:shadow-lg hover:shadow-purple-500/10"
+      className="group block bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10"
     >
       <div className="relative aspect-video">
         {episode.image ? (
@@ -103,17 +103,17 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
         )}
       </div>
       <div className="p-6">
-        <div className="flex items-center gap-3 text-sm text-gray-500 mb-3">
+        <div className="flex items-center gap-3 text-sm text-gray-400 mb-3">
           {episode.season && episode.episodeNumber && (
             <>
               <span className="text-purple-400 font-medium">S{episode.season} E{episode.episodeNumber}</span>
-              <span className="w-1 h-1 rounded-full bg-gray-400" />
+              <span className="w-1 h-1 rounded-full bg-gray-600" />
             </>
           )}
           <span>{date}</span>
           {episode.duration && (
             <>
-              <span className="w-1 h-1 rounded-full bg-gray-400" />
+              <span className="w-1 h-1 rounded-full bg-gray-600" />
               <span className="flex items-center gap-1">
                 <Clock className="h-4 w-4" />
                 {episode.duration}
@@ -121,15 +121,15 @@ export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
             </>
           )}
         </div>
-        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors line-clamp-2">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors line-clamp-2">
           {episode.title}
         </h3>
-        <p className="text-gray-600 line-clamp-2 mb-4">
+        <p className="text-gray-300 line-clamp-2 mb-4">
           {summary}
         </p>
         {episode.guestName && (
-          <p className="text-sm text-gray-500">
-            Guest: <span className="text-gray-700">{episode.guestName}</span>
+          <p className="text-sm text-gray-400">
+            Guest: <span className="text-gray-200">{episode.guestName}</span>
           </p>
         )}
       </div>

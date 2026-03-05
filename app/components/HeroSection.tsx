@@ -18,11 +18,11 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
           alt="Podcast recording setup"
           className="h-full w-full object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/80 to-primary-800/65" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-purple-900/80 to-purple-800/65" />
       </div>
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-display text-6xl md:text-8xl font-bold tracking-tight text-white leading-[0.9]">{title}</h1>
-        {subtitle && <p className="text-lg text-primary-100 mt-8 max-w-xl">{subtitle}</p>}
+        {subtitle && <p className="text-lg text-purple-200 mt-8 max-w-xl">{subtitle}</p>}
       </div>
     </section>
   )

@@ -42,7 +42,7 @@ export default async function HomePage() {
   const recentEpisodes = episodes.filter((ep) => ep !== featuredEpisode).slice(0, 6)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-950">
       <Header />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-900 via-purple-800 to-gray-900 text-white pt-24">
@@ -97,7 +97,7 @@ export default async function HomePage() {
           {/* Featured Episode */}
           {featuredEpisode && (
             <div className="mb-12">
-              <h2 className="text-lg font-semibold text-gray-400 mb-4">Latest Episode</h2>
+              <h2 className="text-lg font-semibold text-gray-300 mb-4">Latest Episode</h2>
               <EpisodeCard episode={featuredEpisode} featured />
             </div>
           )}
@@ -106,7 +106,7 @@ export default async function HomePage() {
           {recentEpisodes.length > 0 && (
             <div className="mb-12">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-semibold text-gray-400">Recent Episodes</h2>
+                <h2 className="text-lg font-semibold text-gray-300">Recent Episodes</h2>
                 <Link href="/episodes" className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors">
                   View All
                 </Link>
