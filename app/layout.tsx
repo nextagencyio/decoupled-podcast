@@ -26,10 +26,10 @@ function getSiteUrl(): string {
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'Podcast',
-    template: `%s | Podcast`
+    default: 'The Deep Dive Podcast',
+    template: `%s | The Deep Dive Podcast`
   },
-  description: 'Every week, hosts Mira Patel and Jordan Hayes sit down with the thinkers, builders, and leaders shaping our technological future. Deep conversations, no jargon,',
+  description: 'Weekly long-form conversations with builders, researchers, and operators on technology, culture, and leadership.',
   formatDetection: {
     email: false,
     address: false,
@@ -64,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="font-sans bg-gray-50 text-gray-900 antialiased">
+      <body className="font-sans bg-white text-gray-900 antialiased">
         <DemoModeBanner />
         <ApolloProvider>
           {children}
