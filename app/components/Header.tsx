@@ -7,8 +7,8 @@ import clsx from 'clsx'
 import { Menu, X } from 'lucide-react'
 
 const navigationItems = [
-  { name: 'Work', href: '/projects' },
-  { name: 'Services', href: '/services' },
+  { name: 'Work', href: '/episodes' },
+  { name: 'Services', href: '/episodes' },
   { name: 'About', href: '/about' },
 ]
 

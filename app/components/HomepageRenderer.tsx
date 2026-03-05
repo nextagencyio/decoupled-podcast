@@ -25,7 +25,7 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
           <p>&copy; {new Date().getFullYear()} Studio Desk. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/about" className="hover:text-primary-900 transition-colors">About</Link>
-            <Link href="/services" className="hover:text-primary-900 transition-colors">Services</Link>
+            <Link href="/episodes" className="hover:text-primary-900 transition-colors">Services</Link>
             <Link href="/contact" className="hover:text-primary-900 transition-colors">Contact</Link>
           </div>
         </div>
