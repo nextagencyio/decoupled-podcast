@@ -11,10 +11,18 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
   const subtitle = (homepageContent as any)?.heroSubtitle || ''
 
   return (
-    <section className="bg-white py-32 md:py-48">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="font-display text-6xl md:text-8xl font-bold tracking-tight text-primary-950 leading-[0.9]">{title}</h1>
-        {subtitle && <p className="text-lg text-primary-400 mt-8 max-w-xl">{subtitle}</p>}
+    <section className="relative overflow-hidden py-32 md:py-48">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=2000&q=80&fit=crop"
+          alt="Podcast recording setup"
+          className="h-full w-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/80 to-primary-800/65" />
+      </div>
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="font-display text-6xl md:text-8xl font-bold tracking-tight text-white leading-[0.9]">{title}</h1>
+        {subtitle && <p className="text-lg text-primary-100 mt-8 max-w-xl">{subtitle}</p>}
       </div>
     </section>
   )
