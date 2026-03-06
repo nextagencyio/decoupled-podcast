@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-episodes",
               "title": "",
-              "number": "240+",
+              "number": "240+", "value": "240+",
               "label": "Episodes Released"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-downloads",
               "title": "",
-              "number": "5M+",
+              "number": "5M+", "value": "5M+",
               "label": "Total Downloads"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-subscribers",
               "title": "",
-              "number": "45K+",
+              "number": "45K+", "value": "45K+",
               "label": "Subscribers"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-countries",
               "title": "",
-              "number": "120+",
+              "number": "120+", "value": "120+",
               "label": "Countries Reached"
             }
           ],
