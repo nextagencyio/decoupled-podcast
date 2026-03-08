@@ -5,6 +5,7 @@ import { HostCard } from '../components/HostCard'
 import type { HostListData } from '@/lib/types'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export default async function HostsPage() {
   const requestHeaders = await headers()

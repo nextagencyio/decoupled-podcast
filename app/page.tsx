@@ -10,6 +10,7 @@ import { checkConfiguration } from '@/lib/config-check'
 import type { HomepageData, EpisodeTeaserData, DrupalHomepage } from '@/lib/types'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
   const configStatus = checkConfiguration()

@@ -5,6 +5,7 @@ import { EpisodeCard } from '../components/EpisodeCard'
 import type { EpisodeTeaserData } from '@/lib/types'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export default async function EpisodesPage() {
   const requestHeaders = await headers()
