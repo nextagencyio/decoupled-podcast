@@ -1,8 +1,7 @@
-import { headers } from 'next/headers'
+import { getClient } from '@/lib/drupal-client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Clock, Calendar, Mic, User, ExternalLink } from 'lucide-react'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_NODE_BY_PATH } from '@/lib/queries'
 import { notFound } from 'next/navigation'
 import type { DrupalEpisode } from '@/lib/types'
@@ -15,8 +14,7 @@ interface EpisodePageProps {
 
 export default async function EpisodePage({ params }: EpisodePageProps) {
   const { slug } = await params
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
+  const client = getClient()
 
   let episode: DrupalEpisode | null = null
 

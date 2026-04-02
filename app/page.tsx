@@ -1,13 +1,10 @@
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
-import { GET_HOMEPAGE_DATA, GET_EPISODE_TEASERS } from '@/lib/queries'
+import { getClient } from '@/lib/drupal-client'
 import { EpisodeCard } from './components/EpisodeCard'
 import Header from './components/Header'
 import { SetupGuide } from './components/SetupGuide'
 import { Mic, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { checkConfiguration } from '@/lib/config-check'
-import type { HomepageData, EpisodeTeaserData, DrupalHomepage } from '@/lib/types'
 
 export const revalidate = 3600
 export const dynamic = 'force-dynamic'
@@ -19,8 +16,7 @@ export default async function HomePage() {
     return <SetupGuide missingVars={configStatus.missingVars} />
   }
 
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
+  const client = getClient()
 
   let homepageContent: DrupalHomepage | null = null
   let episodes: any[] = []

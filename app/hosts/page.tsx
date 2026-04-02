@@ -1,5 +1,4 @@
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
+import { getClient } from '@/lib/drupal-client'
 import { GET_HOST_LIST } from '@/lib/queries'
 import { HostCard } from '../components/HostCard'
 import type { HostListData } from '@/lib/types'
@@ -8,8 +7,7 @@ export const revalidate = 3600
 export const dynamic = 'force-dynamic'
 
 export default async function HostsPage() {
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
+  const client = getClient()
 
   let hosts: any[] = []
   let error: string | null = null

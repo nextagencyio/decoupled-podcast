@@ -1,8 +1,7 @@
-import { headers } from 'next/headers'
+import { getClient } from '@/lib/drupal-client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Mail, ExternalLink } from 'lucide-react'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_NODE_BY_PATH } from '@/lib/queries'
 import { notFound } from 'next/navigation'
 import type { DrupalHost } from '@/lib/types'
@@ -15,8 +14,7 @@ interface HostPageProps {
 
 export default async function HostPage({ params }: HostPageProps) {
   const { slug } = await params
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
+  const client = getClient()
 
   let host: DrupalHost | null = null
 

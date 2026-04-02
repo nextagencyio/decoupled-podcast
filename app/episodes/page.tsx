@@ -1,5 +1,4 @@
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
+import { getClient } from '@/lib/drupal-client'
 import { GET_EPISODE_TEASERS } from '@/lib/queries'
 import { EpisodeCard } from '../components/EpisodeCard'
 import type { EpisodeTeaserData } from '@/lib/types'
@@ -8,8 +7,7 @@ export const revalidate = 3600
 export const dynamic = 'force-dynamic'
 
 export default async function EpisodesPage() {
-  const requestHeaders = await headers()
-  const client = getServerApolloClient(requestHeaders)
+  const client = getClient()
 
   let episodes: any[] = []
   let error: string | null = null
