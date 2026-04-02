@@ -12,10 +12,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "setup": "tsx scripts/setup.ts",
+    "setup": "npx decoupled-cli@latest setup --content data/starter-content.json",
     "setup-content": "npx decoupled-cli@latest content import --file data/starter-content.json",
     "setup-content:preview": "npx decoupled-cli@latest content import --file data/starter-content.json --preview",
-    "build:cloudflare": "opennextjs-cloudflare build"
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "sync-schema": "npx decoupled-cli@latest schema sync"
   },
   "dependencies": {
     "@apollo/client": "^3.13.9",
