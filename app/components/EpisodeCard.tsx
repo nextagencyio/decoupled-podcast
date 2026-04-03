@@ -9,17 +9,18 @@ interface EpisodeCardProps {
 }
 
 export function EpisodeCard({ episode, featured = false }: EpisodeCardProps) {
-  const date = episode.publishDate
-    ? new Date(episode.publishDate).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
-    : new Date(episode.created.timestamp * 1000).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
+  const publishTs = typeof episode.publishDate === 'object' && episode.publishDate
+    ? episode.publishDate.timestamp
+    : typeof episode.publishDate === 'string'
+      ? Math.floor(new Date(episode.publishDate).getTime() / 1000)
+      : null
+  const date = new Date(
+    (publishTs || episode.created?.timestamp || 0) * 1000
+  ).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
 
   const summary = episode.body?.summary || episode.body?.processed?.replace(/<[^>]*>/g, '').slice(0, 200) || ''
 

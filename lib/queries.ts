@@ -24,7 +24,9 @@ export const GET_EPISODE_TEASERS = gql`
           duration
           audioUrl
           guestName
-          publishDate
+          publishDate {
+            timestamp
+          }
           image {
             url
             alt
@@ -114,7 +116,9 @@ export const GET_NODE_BY_PATH = gql`
             duration
             audioUrl
             guestName
-            publishDate
+            publishDate {
+              timestamp
+            }
             image {
               url
               alt

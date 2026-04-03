@@ -13,10 +13,7 @@ export default async function EpisodesPage() {
   let error: string | null = null
 
   try {
-    const { data } = await client.query<EpisodeTeaserData>({
-      query: GET_EPISODE_TEASERS,
-      variables: { first: 50 },
-    })
+    const data = await client.raw<EpisodeTeaserData>(GET_EPISODE_TEASERS, { first: 50 })
     episodes = data?.nodeEpisodes?.nodes || []
   } catch (e: any) {
     console.error('Failed to fetch episodes:', e)

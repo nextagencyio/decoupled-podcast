@@ -19,10 +19,7 @@ export default async function HostPage({ params }: HostPageProps) {
   let host: DrupalHost | null = null
 
   try {
-    const { data } = await client.query({
-      query: GET_NODE_BY_PATH,
-      variables: { path: `/hosts/${slug}` },
-    })
+    const data = await client.raw(GET_NODE_BY_PATH, { path: `/hosts/${slug}` })
     host = data?.route?.entity
   } catch (e) {
     console.error('Failed to fetch host:', e)

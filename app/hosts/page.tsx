@@ -13,9 +13,7 @@ export default async function HostsPage() {
   let error: string | null = null
 
   try {
-    const { data } = await client.query<HostListData>({
-      query: GET_HOST_LIST,
-    })
+    const data = await client.raw<HostListData>(GET_HOST_LIST)
     hosts = data?.nodeHosts?.nodes || []
   } catch (e: any) {
     console.error('Failed to fetch hosts:', e)

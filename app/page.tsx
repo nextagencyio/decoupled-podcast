@@ -1,4 +1,6 @@
 import { getClient } from '@/lib/drupal-client'
+import { GET_HOMEPAGE_DATA, GET_EPISODE_TEASERS } from '@/lib/queries'
+import type { HomepageData, EpisodeTeaserData, DrupalHomepage } from '@/lib/types'
 import { EpisodeCard } from './components/EpisodeCard'
 import Header from './components/Header'
 import { SetupGuide } from './components/SetupGuide'
@@ -23,13 +25,13 @@ export default async function HomePage() {
   let error: string | null = null
 
   try {
-    const [homepageResult, episodesResult] = await Promise.all([
-      client.query<HomepageData>({ query: GET_HOMEPAGE_DATA }),
-      client.query<EpisodeTeaserData>({ query: GET_EPISODE_TEASERS, variables: { first: 10 } }),
+    const [homepageData, episodesData] = await Promise.all([
+      client.raw<HomepageData>(GET_HOMEPAGE_DATA),
+      client.raw<EpisodeTeaserData>(GET_EPISODE_TEASERS, { first: 10 }),
     ])
 
-    homepageContent = homepageResult.data?.nodeHomepages?.nodes?.[0] || null
-    episodes = episodesResult.data?.nodeEpisodes?.nodes || []
+    homepageContent = homepageData?.nodeHomepages?.nodes?.[0] || null
+    episodes = episodesData?.nodeEpisodes?.nodes || []
   } catch (e: any) {
     console.error('Failed to fetch data:', e)
     error = e.message

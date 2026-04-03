@@ -1,0 +1,387 @@
+type Query {
+  node(id: ID!, revision: ID): NodeUnion
+  term(id: ID!, revision: ID): TermUnion
+  menu(name: MenuAvailable!): Menu
+  info: SchemaInformation!
+  nodeEpisodes(after: Cursor, before: Cursor, first: Int, last: Int, reverse: Boolean, sortKey: ConnectionSortKeys): NodeEpisodeConnection!
+  nodeHomepages(after: Cursor, before: Cursor, first: Int, last: Int, reverse: Boolean, sortKey: ConnectionSortKeys): NodeHomepageConnection!
+  nodeHosts(after: Cursor, before: Cursor, first: Int, last: Int, reverse: Boolean, sortKey: ConnectionSortKeys): NodeHostConnection!
+  nodePages(after: Cursor, before: Cursor, first: Int, last: Int, reverse: Boolean, sortKey: ConnectionSortKeys): NodePageConnection!
+  termTags(after: Cursor, before: Cursor, first: Int, last: Int, reverse: Boolean, sortKey: ConnectionSortKeys): TermTagConnection!
+  preview(id: ID!, token: String, langcode: String): NodeUnion
+  route(path: String!, revision: ID): RouteUnion
+}
+
+union NodeUnion = NodeEpisode | NodeHomepage | NodeHost | NodePage
+
+type NodeEpisode implements NodeInterface & EdgeNode {
+  id: ID!
+  uuid: ID!
+  audioUrl: String
+  body: TextSummary
+  changed: DateTime!
+  created: DateTime!
+  duration: String
+  episodeNumber: Int
+  featured: Boolean
+  guestName: String
+  image: Image
+  langcode: Language!
+  path: String
+  promote: Boolean!
+  publishDate: DateTime
+  season: Int
+  status: Boolean!
+  sticky: Boolean!
+  title: String!
+}
+
+interface NodeInterface {
+  id: ID!
+  uuid: ID!
+  changed: DateTime!
+  created: DateTime!
+  langcode: Language!
+  path: String
+  promote: Boolean!
+  status: Boolean!
+  sticky: Boolean!
+  title: String!
+}
+
+type DateTime {
+  timestamp: Timestamp!
+  timezone: TimeZone!
+  offset: UtcOffset!
+  time: Time!
+}
+
+type Language {
+  id: ID
+  name: String
+  direction: String
+}
+
+interface EdgeNode {
+  id: ID!
+}
+
+type TextSummary {
+  value: String
+  processed: Html
+  format: String
+  summary: Html
+}
+
+type Image {
+  url: String!
+  width: Int!
+  height: Int!
+  alt: String
+  title: String
+  size: Int!
+  mime: String
+  variations(styles: [ImageStyleAvailable]): [ImageStyleDerivative!]
+}
+
+enum ImageStyleAvailable {
+  LARGE
+  MEDIA_LIBRARY
+  MEDIUM
+  THUMBNAIL
+  WIDE
+}
+
+type ImageStyleDerivative {
+  name: String!
+  url: String!
+  width: Int!
+  height: Int!
+}
+
+type NodeHomepage implements NodeInterface & EdgeNode {
+  id: ID!
+  uuid: ID!
+  changed: DateTime!
+  created: DateTime!
+  ctaDescription: Text
+  ctaPrimary: String
+  ctaSecondary: String
+  ctaTitle: String
+  heroDescription: Text
+  heroSubtitle: String
+  heroTitle: String
+  langcode: Language!
+  path: String
+  promote: Boolean!
+  status: Boolean!
+  sticky: Boolean!
+  title: String!
+}
+
+type Text {
+  value: String
+  processed: Html
+  format: String
+}
+
+type NodeHost implements NodeInterface & EdgeNode {
+  id: ID!
+  uuid: ID!
+  body: TextSummary
+  changed: DateTime!
+  created: DateTime!
+  email: String
+  langcode: Language!
+  path: String
+  photo: Image
+  promote: Boolean!
+  role: String
+  socialUrl: String
+  status: Boolean!
+  sticky: Boolean!
+  title: String!
+}
+
+type NodePage implements NodeInterface & EdgeNode {
+  id: ID!
+  uuid: ID!
+  body: TextSummary
+  changed: DateTime!
+  created: DateTime!
+  langcode: Language!
+  path: String
+  promote: Boolean!
+  status: Boolean!
+  sticky: Boolean!
+  title: String!
+}
+
+union TermUnion = TermTag
+
+type TermTag implements TermInterface & EdgeNode {
+  id: ID!
+  uuid: ID!
+  changed: DateTime!
+  description: Text!
+  langcode: Language!
+  name: String!
+  parent: TermUnion
+  path: String
+  status: Boolean!
+  weight: Int!
+}
+
+interface TermInterface {
+  id: ID!
+  uuid: ID!
+  changed: DateTime!
+  description: Text!
+  langcode: Language!
+  name: String!
+  parent: TermUnion
+  path: String
+  status: Boolean!
+  weight: Int!
+}
+
+enum MenuAvailable {
+  MAIN
+}
+
+type Menu implements MenuInterface {
+  id: ID!
+  uuid: ID!
+  items: [MenuItem!]!
+  name: String!
+}
+
+interface MenuInterface {
+  id: ID!
+  uuid: ID!
+  items: [MenuItem!]!
+  name: String!
+}
+
+type MenuItem {
+  id: ID!
+  title: String!
+  description: String
+  url: String
+  langcode: Language!
+  internal: Boolean!
+  expanded: Boolean!
+  attributes: MenuItemAttributes!
+  children: [MenuItem!]!
+  route: RouteUnion
+}
+
+type MenuItemAttributes {
+  class: String
+}
+
+union RouteUnion = RouteInternal | RouteExternal
+
+type RouteInternal implements Route {
+  url: String!
+  internal: Boolean!
+  breadcrumbs: [Link!]
+  entity: RouteEntityUnion
+}
+
+interface Route {
+  url: String!
+  internal: Boolean!
+}
+
+type Link {
+  title: String
+  url: String
+  internal: Boolean!
+}
+
+union RouteEntityUnion = NodeEpisode | NodeHomepage | NodeHost | NodePage
+
+type RouteExternal implements Route {
+  url: String!
+  internal: Boolean!
+}
+
+type SchemaInformation {
+  description: String
+  home: String
+  name: String
+  slogan: String
+  version: String
+}
+
+enum ConnectionSortKeys {
+  CREATED_AT
+  UPDATED_AT
+  TITLE
+  STICKY
+  PROMOTED
+  WEIGHT
+}
+
+type NodeEpisodeConnection implements Connection {
+  edges: [NodeEpisodeEdge!]!
+  nodes: [NodeEpisode!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+interface Connection {
+  edges: [Edge!]!
+  nodes: [EdgeNode!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+interface Edge {
+  cursor: Cursor!
+  node: EdgeNode!
+}
+
+type ConnectionPageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: Cursor
+  endCursor: Cursor
+}
+
+type NodeEpisodeEdge implements Edge {
+  cursor: Cursor!
+  node: NodeEpisode!
+}
+
+type NodeHomepageConnection implements Connection {
+  edges: [NodeHomepageEdge!]!
+  nodes: [NodeHomepage!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+type NodeHomepageEdge implements Edge {
+  cursor: Cursor!
+  node: NodeHomepage!
+}
+
+type NodeHostConnection implements Connection {
+  edges: [NodeHostEdge!]!
+  nodes: [NodeHost!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+type NodeHostEdge implements Edge {
+  cursor: Cursor!
+  node: NodeHost!
+}
+
+type NodePageConnection implements Connection {
+  edges: [NodePageEdge!]!
+  nodes: [NodePage!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+type NodePageEdge implements Edge {
+  cursor: Cursor!
+  node: NodePage!
+}
+
+type TermTagConnection implements Connection {
+  edges: [TermTagEdge!]!
+  nodes: [TermTag!]!
+  pageInfo: ConnectionPageInfo!
+}
+
+type TermTagEdge implements Edge {
+  cursor: Cursor!
+  node: TermTag!
+}
+
+type Mutation {
+  _: Boolean!
+}
+
+type Subscription {
+  _: Boolean!
+}
+
+type DateRange {
+  start: DateTime
+  end: DateTime
+}
+
+type File {
+  name: String
+  url: String!
+  size: Int!
+  mime: String
+  description: String
+}
+
+type ImageStyle implements ImageStyleInterface {
+  id: ID!
+  uuid: ID!
+}
+
+interface ImageStyleInterface {
+  id: ID!
+  uuid: ID!
+}
+
+union ImageStyleUnion = ImageStyle
+
+input KeyValueInput {
+  key: String!
+  value: String
+}
+
+union MenuUnion = Menu
+
+enum SortDirection {
+  ASC
+  DESC
+}
+
+type UnsupportedType {
+  unsupported: Boolean
+}

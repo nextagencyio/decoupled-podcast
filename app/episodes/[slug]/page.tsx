@@ -19,10 +19,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
   let episode: DrupalEpisode | null = null
 
   try {
-    const { data } = await client.query({
-      query: GET_NODE_BY_PATH,
-      variables: { path: `/episodes/${slug}` },
-    })
+    const data = await client.raw(GET_NODE_BY_PATH, { path: `/episodes/${slug}` })
     episode = data?.route?.entity
   } catch (e) {
     console.error('Failed to fetch episode:', e)
@@ -32,17 +29,18 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
     notFound()
   }
 
-  const date = episode.publishDate
-    ? new Date(episode.publishDate).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
-    : new Date(episode.created.timestamp * 1000).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })
+  const publishTs = typeof episode.publishDate === 'object' && episode.publishDate
+    ? episode.publishDate.timestamp
+    : typeof episode.publishDate === 'string'
+      ? Math.floor(new Date(episode.publishDate).getTime() / 1000)
+      : null
+  const date = new Date(
+    (publishTs || episode.created?.timestamp || 0) * 1000
+  ).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
 
   return (
     <article className="py-12">

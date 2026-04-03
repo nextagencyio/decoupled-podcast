@@ -36,7 +36,7 @@ export interface DrupalEpisode extends DrupalNode {
   duration?: string
   audioUrl?: string
   guestName?: string
-  publishDate?: string
+  publishDate?: { timestamp: number } | string
   image?: {
     url: string
     alt?: string
